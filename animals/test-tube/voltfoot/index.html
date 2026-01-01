@@ -79,7 +79,7 @@
 
 <nav
   data-breadcrumb
-  data-breadcrumb-base="/portal/"
+  data-breadcrumb-base="/"
   data-breadcrumb-resolve="false">
 </nav>
 
@@ -95,21 +95,22 @@
 <footer id="site-footer"></footer>
 
 <script>
-  // Project Pages の公開ルート
-  const base = "/portal/";
-  // ★ここが重要：partials は animals 配下
-  const url = base + "animals/partials/footer.html?v=" + Date.now();
+  // GitHub Raw 配信から取得（Pagesの公開対象外でも読める）
+  const url =
+    "https://raw.githubusercontent.com/haruo-records/portal/main/animals/partials/footer.html?v=" +
+    Date.now();
 
   fetch(url, { cache: "no-store" })
-    .then(r => {
+    .then((r) => {
       if (!r.ok) throw new Error("footer not found: " + r.status);
       return r.text();
     })
-    .then(html => {
+    .then((html) => {
       document.getElementById("site-footer").innerHTML = html;
     })
-    .catch(err => console.log(err));
+    .catch((err) => console.log(err));
 </script>
+
 
 
 </body>
