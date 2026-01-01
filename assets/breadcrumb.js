@@ -183,6 +183,12 @@
       );
     }
 
-    render(crumbs);
+    // Home（先頭要素）を除外する
+if (crumbs.length && (crumbs[0].label || "").toLowerCase() === "home") {
+  crumbs.shift();
+}
+
+render(crumbs);
+
   })();
 })();
