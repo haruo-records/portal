@@ -75,13 +75,13 @@
 
 <body>
 
-<link rel="stylesheet" href="/assets/breadcrumb.css">
-<script src="/assets/breadcrumb.js"></script>
+<link rel="stylesheet" href="../../../assets/breadcrumb.css">
+<script src="../../../assets/breadcrumb.js"></script>
+
 <nav
   data-breadcrumb
-  data-breadcrumb-base="/"
-  data-breadcrumb-resolve="false">
-</nav>
+  data-breadcrumb-base="/portal/"
+  data-breadcrumb-resolve="false"></nav>
 
   <h1>voltfoot</h1>
 
@@ -90,12 +90,11 @@
    <img src="./images/voltfoot_202601_02.png" alt="voltfoot observed record 2026-01 02">
   </div>
 
-  <footer id="site-footer"> </footer>
+<footer id="site-footer"></footer>
 
 <script>
-  // GitHubのraw配信から取得（Pagesの公開対象外でも読める）
- const url = "https://raw.githubusercontent.com/haruo-records/portal/refs/heads/main/animals/partials/footer.html?v=" + Date.now();
-
+  const base = "/portal/"; // Project Pages の公開ルート
+  const url = base + "partials/footer.html?v=" + Date.now();
 
   fetch(url, { cache: "no-store" })
     .then(r => {
@@ -105,9 +104,7 @@
     .then(html => {
       document.getElementById("site-footer").innerHTML = html;
     })
-    .catch(err => {
-      console.log(err);
-    });
+    .catch(err => console.log(err));
 </script>
 
 
