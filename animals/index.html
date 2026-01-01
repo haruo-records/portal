@@ -1,16 +1,64 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Haruo Records animals</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>animals</title>
+
+  <!-- SEO -->
+  <meta name="description" content="animals: a quiet record of forms. test tube series and branches." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://haruo-records.github.io/portal/animals/" />
+
+  <!-- OG / Twitter -->
+  <meta property="og:title" content="animals" />
+  <meta property="og:description" content="animals: a quiet record of forms. test tube series and branches." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://haruo-records.github.io/portal/animals/" />
+  <meta name="twitter:card" content="summary" />
+
+  <!-- Shared assets -->
+  <link rel="stylesheet" href="/portal/assets/site.css" />
+  <script src="/portal/assets/site.js" defer></script>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"CollectionPage",
+    "name":"animals",
+    "url":"https://haruo-records.github.io/portal/animals/",
+    "isPartOf":{
+      "@type":"CollectionPage",
+      "name":"portal",
+      "url":"https://haruo-records.github.io/portal/"
+    }
+  }
+  </script>
+
+  <style>
+    /* animals only (minimal) */
+    .list{ font-size: 20px; }
+    .subnote{ margin-top: 18px; color: var(--muted); font-size: 14px; line-height: 1.6; max-width: 70ch; }
+  </style>
 </head>
+
 <body>
+  <main class="container">
+    <div id="breadcrumb" class="breadcrumb"></div>
 
-<h1>animals</h1>
+    <h1>animals</h1>
 
-<ul>
-  <li><a href="./test-tube/">test tube</a></li>
-</ul>
-  
+    <ul class="list">
+      <li><a href="./test-tube/">test tube</a></li>
+      <!-- 追加する場合はここに増やす：
+      <li><a href="/portal/animals/cosmic-colored/">cosmic colored</a></li>
+      -->
+    </ul>
+
+    <p class="subnote">
+      Series are organized as folders. Each series page is a directory index for the next layer.
+    </p>
+  </main>
 </body>
 </html>
