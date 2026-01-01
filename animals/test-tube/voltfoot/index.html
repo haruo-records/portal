@@ -75,9 +75,10 @@
 
 <body>
 
-<link rel="stylesheet" href="/portal/assets/breadcrumb.css">
+<link rel="stylesheet" href="/portal/assets/breadcrumb.css?v=1">
+<script src="/portal/assets/breadcrumb.js?v=1"></script>
 <nav data-breadcrumb data-breadcrumb-base="/portal/" data-breadcrumb-resolve="false"></nav>
-<script src="/portal/assets/breadcrumb.js"></script>
+
 
   <h1>voltfoot</h1>
 
@@ -90,7 +91,8 @@
 
 <script>
   // GitHubのraw配信から取得（Pagesの公開対象外でも読める）
-  const url = "https://raw.githubusercontent.com/haruo-records/portal/animals/main/partials/footer.html?v=" + Date.now();
+ const url = "https://raw.githubusercontent.com/haruo-records/portal/refs/heads/main/animals/partials/footer.html?v=" + Date.now();
+
 
   fetch(url, { cache: "no-store" })
     .then(r => {
