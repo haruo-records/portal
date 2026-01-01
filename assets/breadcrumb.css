@@ -1,0 +1,33 @@
+.breadcrumb {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  font-size: 0.95rem;
+}
+
+.breadcrumb li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.breadcrumb li::after {
+  content: "/";
+  opacity: 0.4;
+}
+
+.breadcrumb li:last-child::after {
+  content: "";
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.breadcrumb [aria-current="page"] {
+  opacity: 0.8;
+}
