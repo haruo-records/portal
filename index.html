@@ -1,30 +1,93 @@
+<!-- File: /portal/index.html -->
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Haruo Records Portal</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>portal</title>
+
+  <!-- SEO -->
+  <meta name="description" content="A quiet portal to ongoing works: animals, HARMONEER, and related traces." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://haruo-records.github.io/portal/" />
+
+  <!-- OG / Twitter -->
+  <meta property="og:title" content="portal" />
+  <meta property="og:description" content="A quiet portal to ongoing works: animals, HARMONEER, and related traces." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://haruo-records.github.io/portal/" />
+  <meta name="twitter:card" content="summary" />
+
+  <!-- Shared assets -->
+  <link rel="stylesheet" href="/portal/assets/site.css" />
+  <script src="/portal/assets/site.js" defer></script>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"CollectionPage",
+    "name":"portal",
+    "url":"https://haruo-records.github.io/portal/",
+    "isPartOf":{
+      "@type":"WebSite",
+      "name":"haruo-records.github.io",
+      "url":"https://haruo-records.github.io/"
+    }
+  }
+  </script>
+
+  <style>
+    /* portal only (minimal) */
+    .section{ margin-top: 24px; }
+    .list{ font-size: 20px; }
+    .note{ margin-top: 22px; color: var(--muted); font-size: 14px; line-height: 1.6; max-width: 70ch; }
+  </style>
 </head>
+
 <body>
+  <header>
+    <div class="container">
+      <div class="brand">portal</div>
+      <nav aria-label="Primary">
+        <a href="/portal/">portal</a>
+        <a href="/portal/animals/">animals</a>
+        <a href="https://harmoneer.net/">HARMONEER</a>
+        <a href="https://knowledge.harmoneer.net/">knowledge</a>
+        <a href="https://selfdesign.harmoneer.net/">selfdesign</a>
+      </nav>
+    </div>
+  </header>
 
-<h1>portal</h1>
+  <main class="container">
+    <div id="breadcrumb" class="breadcrumb"></div>
 
-<h2>animals</h2>
-<ul>
-  <li><a href="./animals/">animals</a></li>
-</ul>
+    <h1>portal</h1>
 
-<h2>HARMONEER</h2>
-<ul>
-  <li><a href="https://harmoneer.net/" target="_blank">harmoneer.net</a></li>
-  <li><a href="https://knowledge.harmoneer.net/" target="_blank">knowledge.harmoneer.net</a></li>
-  <li><a href="https://selfdesign.harmoneer.net/" target="_blank">selfdesign.harmoneer.net</a></li>
-</ul>
+    <section class="section" aria-labelledby="sec-animals">
+      <h2 id="sec-animals">animals</h2>
+      <ul class="list">
+        <li><a href="/portal/animals/">animals</a></li>
+      </ul>
+    </section>
 
-<h2>パパ再起動</h2>
-<ul>
-  <li><a href="https://www.instagram.com/haruo_harmoneer/" target="_blank">パパ再起動 instagram</a></li>
-  <li><a href="https://x.com/haruo_harmoneer" target="_blank">パパ再起動 x.com</a></li>
-</ul>
+    <section class="section" aria-labelledby="sec-harmoneer">
+      <h2 id="sec-harmoneer">HARMONEER</h2>
+      <ul class="list">
+        <li><a href="https://harmoneer.net/">harmoneer.net</a></li>
+        <li><a href="https://knowledge.harmoneer.net/">knowledge.harmoneer.net</a></li>
+        <li><a href="https://selfdesign.harmoneer.net/">selfdesign.harmoneer.net</a></li>
+      </ul>
+    </section>
 
+    <section class="section" aria-labelledby="sec-papa">
+      <h2 id="sec-papa">Papa Reboot</h2>
+      <ul class="list">
+        <li><a href="https://www.instagram.com/haruo_harmoneer/" target="_blank">パパ再起動 instagram</a></li>
+        <li><a href="https://x.com/haruo_harmoneer" target="_blank">パパ再起動 x.com</a></li>
+      </ul>
+    </section>
+
+  </main>
 </body>
 </html>
