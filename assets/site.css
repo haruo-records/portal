@@ -85,8 +85,8 @@ h2{
 
 /* lists & content links */
 ul{
-  margin: 0 0 0 40px;
-  padding-left: 100px;
+  margin: 0;
+  padding-left: 40px;
   font-size: 20px;
 }
 a{
