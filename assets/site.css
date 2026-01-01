@@ -1,0 +1,99 @@
+:root{
+  --max: 1100px;
+  --pad: 28px;
+
+  /* text system */
+  --text: #111;
+  --muted: #666;
+
+  /* link system (dark gray) */
+  --link: #333;        /* 通常リンク */
+  --link-hover: #000;  /* hover時 */
+
+  --border: #e6e6e6;
+}
+
+/* reset */
+*{ box-sizing: border-box; }
+
+body{
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  color: var(--text);
+  background: #fff;
+}
+
+.container{
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: var(--pad);
+}
+
+/* header */
+header{
+  border-bottom: 1px solid var(--border);
+  background: #fff;
+}
+header .container{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+}
+.brand{
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: .02em;
+}
+
+/* navigation links */
+nav a{
+  margin-left: 14px;
+  color: var(--link);
+  text-decoration: none;
+}
+nav a:hover{
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+/* breadcrumb */
+.breadcrumb{
+  margin: 14px 0 18px;
+  font-size: 14px;
+  color: var(--muted);
+}
+.breadcrumb a{
+  color: var(--muted);
+  text-decoration: none;
+}
+.breadcrumb a:hover{
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+/* headings */
+h1{
+  margin: 18px 0 10px;
+  font-size: 52px;
+  line-height: 1.05;
+}
+h2{
+  margin: 28px 0 10px;
+  font-size: 28px;
+}
+
+/* lists & content links */
+ul{
+  margin: 0;
+  padding-left: 20px;
+  font-size: 20px;
+}
+a{
+  color: var(--link);
+  text-decoration: none;
+}
+a:hover{
+  color: var(--link-hover);
+  text-decoration: underline;
+}
