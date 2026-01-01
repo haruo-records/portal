@@ -81,13 +81,14 @@ nav a:hover{
 h2{
   margin: 40px 0  20px;
   font-size: 16px;
+  font-weight:bold;
 }
 
 /* lists & content links */
 ul{
   margin: 0;
   padding-left: 40px;
-  font-size: 20px;
+  font-size: 16px;
 }
 a{
   color: var(--link);
