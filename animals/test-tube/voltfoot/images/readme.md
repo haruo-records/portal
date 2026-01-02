@@ -1,1 +1,0 @@
-voltfoot images
