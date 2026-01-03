@@ -128,7 +128,7 @@ a:hover{
 
 .tags .tag-label {
   color: #999;
-  font-size: 11px;
+  font-size: ppx;
   letter-spacing: 0.04em;
 }
 
