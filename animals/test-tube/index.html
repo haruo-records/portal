@@ -26,6 +26,34 @@
   <li><a href="./voltfoot/">volt foot</a></li>
 </ul>
 
+  <section class="tags">
+  <p>
+    <span class="tag-label">Tags:</span>
+    conceptual art / generative art / speculative biology / abstract organism / posthuman /<br>
+    animals project / test-tube animals / /<br>
+    emergence / mutation / liminality / observed not explained
+  </p>
+</section>
+
+     <footer id="site-footer"></footer>
+
+<script>
+  // GitHub Raw 配信から取得（Pagesの公開対象外でも読める）
+  const url =
+    "https://haruo-records.github.io/portal/animals/partials/footer.html?v=" +
+    Date.now();
+
+  fetch(url, { cache: "no-store" })
+    .then((r) => {
+      if (!r.ok) throw new Error("footer not found: " + r.status);
+      return r.text();
+    })
+    .then((html) => {
+      document.getElementById("site-footer").innerHTML = html;
+    })
+    .catch((err) => console.log(err));
+</script>
+  
 </main>
 </body>
 </html>
