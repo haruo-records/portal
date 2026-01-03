@@ -6,8 +6,10 @@
   <title>animals</title>
 
   <!-- SEO -->
-  <meta name="description" content="animals: a quiet record of forms. test tube series and branches." />
-  <meta name="robots" content="index,follow" />
+<meta name="description" content="animals is a conceptual art project exploring speculative biology and abstract organisms. Observed, not explained.">
+<meta name="keywords" content="conceptual art, generative art, speculative biology, abstract organism, posthuman, bioart, animals project, test-tube animals, cosmic-colored animals, emergence, mutation, liminality, observed not explained">
+<meta name="robots" content="index, follow">
+  
   <link rel="canonical" href="https://haruo-records.github.io/portal/animals/" />
 
   <!-- OG / Twitter -->
@@ -60,6 +62,34 @@
       -->
     </ul>
 
+
+     <section class="tags">
+  <p>
+    Tags:
+    conceptual art / generative art / speculative biology / abstract organism / posthuman /
+    animals project / test-tube animals / cosmic-colored animals /
+    emergence / mutation / liminality / observed not explained
+  </p>
+</section>
+
+     <footer id="site-footer"></footer>
+
+<script>
+  // GitHub Raw 配信から取得（Pagesの公開対象外でも読める）
+  const url =
+    "https://haruo-records.github.io/portal/animals/partials/footer.html?v=" +
+    Date.now();
+
+  fetch(url, { cache: "no-store" })
+    .then((r) => {
+      if (!r.ok) throw new Error("footer not found: " + r.status);
+      return r.text();
+    })
+    .then((html) => {
+      document.getElementById("site-footer").innerHTML = html;
+    })
+    .catch((err) => console.log(err));
+</script>
   </main>
 </body>
 </html>
